@@ -8,28 +8,19 @@ public class Main {
         Random r = new Random();
         int a = r.nextInt(100);
         System.out.println("random:" + a);
-        //Scanner myObje = new Scanner(System.in);
-        //int sayii = myObje.nextInt();
-        //System.out.println("num is:" + sayii);
-        //SayiGir();
+
         int i = 0;
         int x = 0;
-        // boolean b = i < 6 || x != 0;
+   
         while (i < 6 || x <1) {
             Kontrol((SayiGir()), a, i,x);
             i += 1;
-        /*public static void SayiGir () {
-            System.out.println("Enter num:");
-            Scanner myObj = new Scanner(System.in);
-            int sayi = myObj.nextInt();
-            System.out.println("new num is::" + sayi);
-        }*/
         }
     }
         private static int SayiGir () {
             System.out.println("Enter num:");
             Scanner myObj = new Scanner(System.in);
-            //System.out.println("new num is::" + sayi);
+        
             return (myObj.nextInt());
         }
         private static void Kontrol ( int sayi, int a, int i,int x){
